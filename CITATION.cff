@@ -15,7 +15,6 @@ keywords:
   - ERA5
   - aircraft performance
   - North Atlantic
-# Fill in on publication day (see docs/publicacion/LISTA_PUBLICACION.md):
-#   repository-code: "https://github.com/<user>/<repo>"
-#   date-released: "YYYY-MM-DD"
-#   doi: "10.5281/zenodo.XXXXXXX"
+repository-code: "https://github.com/duartesanchezgerman-ux/traj4d-nat"
+date-released: "2026-11-05"
+# doi: se añade tras la primera publicación en Zenodo (DOI concepto)
