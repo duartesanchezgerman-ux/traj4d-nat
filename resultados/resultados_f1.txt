@@ -1,0 +1,43 @@
+==============================================================================
+A. Envolvente: FL máximo válido a M0,85 según la masa (Poll–Schumann)
+    250 t -> FL máx 362
+    230 t -> FL máx 380
+    210 t -> FL máx 398
+    190 t -> FL máx 418
+    170 t -> FL máx 430
+==============================================================================
+B. Óptimo local (FL, M) que maximiza el SR sobre el suelo, según masa y viento
+   masa   |   w=-30 m/s        |   w=0              |   w=+30 m/s
+   230 t | FL342 M0.830 132.7m/kg | FL342 M0.820 151.2m/kg | FL340 M0.805 169.9m/kg
+   210 t | FL360 M0.830 144.4m/kg | FL360 M0.820 164.6m/kg | FL358 M0.805 185.2m/kg
+   190 t | FL380 M0.830 158.2m/kg | FL378 M0.815 180.5m/kg | FL374 M0.800 203.2m/kg
+   170 t | FL404 M0.830 175.1m/kg | FL400 M0.815 199.8m/kg | FL396 M0.795 225.0m/kg
+  -> con viento en contra el Mach óptimo SUBE y con viento a favor BAJA: es la variación de velocidad de la que sale el 4,2 % de Wells et al.
+==============================================================================
+C. Crucero de 5770 km desde 225 t — perfiles verticales y de velocidad
+  [sin viento]
+    FL350 const, M0,85                       comb  35.16 t  (+0.52 % vs escalones)  6.36 h  FL350->FL350  M̄ 0.850
+    FL370 const, M0,85                       comb  35.08 t  (+0.28 % vs escalones)  6.39 h  FL370->FL370  M̄ 0.850
+    Escalones 2000 ft desde FL350, M0,85     comb  34.98 t  (+0.00 % vs escalones)  6.38 h  FL350->FL370  M̄ 0.850
+    Ascenso continuo óptimo, M0,85 fijo      comb  34.95 t  (-0.08 % vs escalones)  6.38 h  FL348->FL380  M̄ 0.850
+    Ascenso continuo + Mach óptimos          comb  34.63 t  (-1.01 % vs escalones)  6.64 h  FL346->FL378  M̄ 0.817
+  [en contra 30 m/s (oeste)]
+    FL350 const, M0,85                       comb  39.58 t  (+0.65 % vs escalones)  7.22 h  FL350->FL350  M̄ 0.850
+    FL370 const, M0,85                       comb  39.44 t  (+0.29 % vs escalones)  7.26 h  FL370->FL370  M̄ 0.850
+    Escalones 2000 ft desde FL350, M0,85     comb  39.32 t  (+0.00 % vs escalones)  7.24 h  FL350->FL390  M̄ 0.850
+    Ascenso continuo óptimo, M0,85 fijo      comb  39.29 t  (-0.08 % vs escalones)  7.25 h  FL346->FL384  M̄ 0.850
+    Ascenso continuo + Mach óptimos          comb  39.08 t  (-0.62 % vs escalones)  7.45 h  FL346->FL384  M̄ 0.830
+  [a favor 30 m/s (este)]
+    FL350 const, M0,85                       comb  31.64 t  (+0.43 % vs escalones)  5.68 h  FL350->FL350  M̄ 0.850
+    FL370 const, M0,85                       comb  31.60 t  (+0.30 % vs escalones)  5.71 h  FL370->FL370  M̄ 0.850
+    Escalones 2000 ft desde FL350, M0,85     comb  31.50 t  (+0.00 % vs escalones)  5.70 h  FL350->FL370  M̄ 0.850
+    Ascenso continuo óptimo, M0,85 fijo      comb  31.48 t  (-0.08 % vs escalones)  5.70 h  FL348->FL376  M̄ 0.850
+    Ascenso continuo + Mach óptimos          comb  31.03 t  (-1.49 % vs escalones)  5.99 h  FL344->FL370  M̄ 0.803
+==============================================================================
+D. Error de Breguet (L/D y TSFC del punto inicial) frente a la integración, FL370 M0,85, sin viento
+  Combustible integrado 35.08 t para 5770 km
+  Breguet con el punto inicial: 5736 km (-0.6 %)  |  con la masa media: 5787 km (+0.3 %)
+==============================================================================
+E. Sesgo entre modelos: mismo crucero (FL370 const, M0,85, sin viento)
+  PollSchumann-B789      combustible  35.08 t
+  OpenAP-B789            combustible  43.76 t

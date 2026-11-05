@@ -1,0 +1,119 @@
+
+====================================================================================================
+A. ATMÓSFERA ESTÁNDAR (presión en hPa; tabla ISA de referencia)
+====================================================================================================
+  [OK] FL300: 300.90 hPa (tabla 300.90)
+  [OK] FL350: 238.42 hPa (tabla 238.42)
+  [OK] FL370: 216.63 hPa (tabla 216.63)
+  [OK] FL390: 196.77 hPa (tabla 196.77)
+  [OK] FL410: 178.74 hPa (tabla 178.74)
+
+====================================================================================================
+B. CONVENIO DEL VIENTO (dirección DE la que sopla: u = −V·sin, v = −V·cos)
+====================================================================================================
+  error vectorial RMS (informes válidos): convenio usado 3.25 m/s | convenio contrario 63.60 m/s | viento medio 27.9 m/s
+  [OK] el convenio usado es el correcto
+
+====================================================================================================
+C. INTERPOLACIÓN DE ERA5: xarray frente al código (300 informes al azar)
+====================================================================================================
+  diferencia máxima xarray − código: u 1.42e-14 m/s | v 1.07e-14 m/s | T 2.84e-14 K (n = 50)
+  [OK] misma interpolación
+
+====================================================================================================
+D. HORA, POSICIONES Y VIENTO: duraciones y velocidades observadas frente al modelo
+====================================================================================================
+  1) Velocidad sobre el suelo: medida a bordo (etiqueta 14) − distancia WGS84/tiempo entre informes: mediana +0.85 kt (n = 530)
+  [OK] la hora y las posiciones de los informes son coherentes con la velocidad medida a bordo
+  2) Distancias del código (esfera, R = 6371 km) frente a WGS84: las de WGS84 son un 0.31 % más largas (p5–p95 0.19–0.35 %)
+  3) Mach medido n=445 | duración del modelo (corregida a WGS84) − observada: mediana -0.28 % | p5–p95 -1.36 a +0.47 %
+  3) Mach tipo   n=1440 | duración del modelo (corregida a WGS84) − observada: mediana -0.16 % | p5–p95 -1.70 a +1.38 %
+  [OK] con Mach medido, la duración del modelo cuadra con la observada (|mediana| < 0,5 %)
+     casos con |error| > 5 %: 20 (informes con hora errónea no detectable al final del tramo, ver Métodos)
+  El factor esfera/WGS84 afecta casi por igual a la ruta volada y a la óptima: su efecto en el exceso relativo se
+  estimó en +0,0002 puntos porcentuales de media (p5–p95: −0,003 a +0,004) con las latitudes del óptimo restringido.
+
+====================================================================================================
+E. CONSUMO HORARIO EN CRUCERO frente a valores públicos típicos (kg/h, a 0,8·MTOW)
+====================================================================================================
+  [OK] B789: 5,370 kg/h (n=254; rango típico 5,000–6,500)
+  [OK] A359: 5,738 kg/h (n=381; rango típico 5,300–7,000)
+  [OK] B77W: 8,146 kg/h (n=142; rango típico 6,800–9,000)
+  [OK] B772: 7,030 kg/h (n=213; rango típico 6,000–8,000)
+  [OK] A333: 5,236 kg/h (n=106; rango típico 5,200–7,000)
+  [OK] B788: 4,790 kg/h (n=192; rango típico 4,600–6,000)
+  [OK] B78X: 5,645 kg/h (n=185; rango típico 5,300–7,000)
+  [OK] A35K: 6,662 kg/h (n=154; rango típico 6,200–8,200)
+
+====================================================================================================
+F. INTEGRADOR: Euler de 1 km (escrito aquí) frente al RK4 de 20 km del código, 25 tramos
+====================================================================================================
+  diferencia de combustible Euler − código: media +0.008 % | máx |·| 0.233 %
+  [OK] los dos integradores coinciden (< 0,3 %; la ruta del código interpola en ortodrómica por tramos)
+
+====================================================================================================
+G. OPTIMIZADOR
+====================================================================================================
+  [OK] el óptimo nunca es peor que la ortodrómica (tolerancia 0,05 %) — mínimo -0.003 %
+  tramos con la volada mejor que el óptimo: 395 de 1885; mediana -0.032 %, mínimo -0.131 %
+  de ellos, por debajo de −0,2 % (suelo de ruido declarado): 0
+  [OK] casi todos los casos negativos están dentro del suelo de ruido (±0,2 %)
+  [OK] la ruta volada nunca es más corta que la ortodrómica
+
+====================================================================================================
+H. DESCOMPOSICIÓN ESTRUCTURA × ELECCIÓN
+====================================================================================================
+  [OK] (1+E_total) = (1+E_estr)·(1+E_elec) en todos los tramos — máx. error 2.2e-16
+  [OK] el exceso total de f3_estructura es el mismo que el de f2_comparacion
+  [OK] el óptimo restringido nunca es mejor que el libre (tolerancia 0,2 %) — mínimo -0.132 %
+
+====================================================================================================
+I. BOOTSTRAP POR DÍAS: implementación y semilla distintas (B = 20 000, semilla 12345)
+====================================================================================================
+  exceso medio 0.231 %  IC95 [0.196, 0.267]  (f3_estadistica, B = 5000, semilla 20261102: [0.196, 0.267])
+  [OK] los dos bootstraps dan el mismo intervalo a ±0,01
+
+====================================================================================================
+J. CIFRAS DEL MANUSCRITO (inglés): cada frase se reconstruye con los datos y se busca literal en main.tex
+====================================================================================================
+  [OK] 1,885 were evaluated
+  [OK] burns 0.23\% more fuel than the wind-optimal path
+  [OK] or 22~kg
+  [OK] on segments of 1,327~km on average
+  [OK] the median is 0.10\%
+  [OK] 13\% of the segments exceed 0.5\% and 4\% exceed 1\%
+  [OK] The optimum is on average 0.19\%
+  [OK] Winter, eastbound & 240 & 0.30 & 0.11 & 26 \\
+  [OK] Winter, westbound & 120 & 0.19 & 0.04 & 20 \\
+  [OK] Summer, eastbound & 930 & 0.23 & 0.10 & 22 \\
+  [OK] Summer, westbound & 595 & 0.21 & 0.10 & 21 \\
+  [OK] Boeing 787-9 & 254 & 0.20
+  [OK] Airbus A350-900 & 381 & 0.23
+  [OK] subsample (355 segments, one in five), the mean excess is 0.184\%, 0.183\% and 0.182\%
+  [OK] Mach number was measured on the flight itself in 445 segments
+  [OK] for only 24\% of the segments
+  [OK] comparison of 31,190 valid reports
+  [OK] The vector RMS error is 3.25~m/s
+  [OK] the median vector error 2.29~m/s
+  [OK] the 95th percentile 5.80~m/s
+  [OK] ERA5 is 0.75~K colder than the aircraft
+  [OK] costs on average only 0.062\%
+  [OK] that is, 27\% of the total excess
+  [OK] In 1,755 of the 1,885 segments
+  [OK] Identical on every meridian & 917
+  [OK] Differs by 0.5$^\circ$      & 761
+  [OK] Differs by $\geq$1$^\circ$  & 77
+  [OK] from the 48\% of segments
+  [OK] & 11,070
+  [OK] & 3.20 &
+  [OK] & 13,866
+  [OK] & 3.08 &
+  [OK] & 4,895
+  [OK] & 3.63 &
+  [OK] & 1,356
+  [OK] & 3.84 &
+
+====================================================================================================
+RESUMEN
+====================================================================================================
+  Comprobaciones con fallo: 0 (ninguna)

@@ -1,0 +1,37 @@
+====================================================================================================
+Puntos de paso planificados (Tag 13) distintos entre 10°W y 60°W: 7541 | en un meridiano múltiplo de 10°: 4667
+  latitud de los que están en un meridiano múltiplo de 10° [%]: entero 70.6 | medio 25.6 | otro 3.7
+====================================================================================================
+Tramos de f2_comparacion: 1885 | con al menos un meridiano múltiplo de 10° interior: 1885 | con todos los puntos planificados identificados (Tag 13): 1755
+  meridianos interiores por tramo: {1: 386, 2: 1404, 3: 92, 4: 3}
+  latitud de los puntos planificados de estos tramos [%]: entero 94.5 | medio 5.3 | otro 0.2
+
+DESCOMPOSICIÓN DEL EXCESO (media y mediana, %)
+  total (volada / óptimo libre)                 media   0.231 | mediana   0.101 | p10  -0.034 | p90   0.603 | n 1885
+  estructural (restringido / óptimo libre)      media   0.062 | mediana   0.042 | p10  -0.044 | p90   0.192 | n 1885
+  de elección (volada / restringido)            media   0.168 | mediana   0.018 | p10  -0.047 | p90   0.519 | n 1885
+  volada / ruta planificada (Tag 13)            media  -0.036 | mediana  -0.007 | p10  -0.137 | p90   0.041 | n 1755
+
+El punto planificado coincide con el del óptimo restringido en todos los meridianos: 52.3 % | difiere en 0,5°: 43.4 % | en ≥1°: 4.4 %  (n = 1755)
+
+SEGÚN LA DIFERENCIA ENTRE EL PUNTO PLANIFICADO Y EL DEL ÓPTIMO RESTRINGIDO (máxima en el tramo)
+          exceso_total_pct              estructural_pct              eleccion_pct             
+                      mean median count            mean median count         mean median count
+clase_dif                                                                                     
+igual                0.048  0.018   917           0.047  0.030   917        0.001 -0.005   917
+0,5°                 0.324  0.255   761           0.074  0.055   761        0.249  0.187   761
+>=1°                 1.361  1.095    77           0.102  0.073    77        1.258  0.971    77
+  parte de la suma del exceso de elección que aportan los tramos con >=1°: 34 %
+
+IC95 bootstrap por días (B = 5000, semilla 20261102), media:
+  exceso_total_pct     0.231 %  [0.196, 0.267]
+  estructural_pct      0.062 %  [0.053, 0.071]
+  eleccion_pct         0.168 %  [0.138, 0.201]
+  fracción estructural de la media del exceso: 27 %
+
+POR SENTIDO
+        exceso_total_pct              estructural_pct              eleccion_pct             
+                    mean median count            mean median count         mean median count
+sentido                                                                                     
+E                  0.244  0.104  1170           0.064  0.047  1170        0.181  0.014  1170
+O                  0.208  0.095   715           0.060  0.036   715        0.148  0.023   715

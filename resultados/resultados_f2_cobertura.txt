@@ -1,0 +1,34 @@
+================================================================================
+Informes en la caja NAT: 232959 | con icao24: 232951 (recuperados por matrícula: 3806) | con tipo: 230058
+Con viento medido (Tag 16): 138523 | con Mach (Tag 15): 39633
+================================================================================
+Cierre del triángulo de viento (informes con 14+15+16): n = 417
+  residuo vectorial [kt]: p50 0.94 | p90 2.43 | p95 10.38 | p99 55.54 | >10 kt: 5.3 %
+  Mach real B789: mediana 0.845 | p10 0.837 | p90 0.852 | n = 7083
+  Mach real A359: mediana 0.850 | p10 0.846 | p90 0.854 | n = 12155
+================================================================================
+Segmentos (hueco > 3 h = vuelo nuevo): 88208
+  tramos con extensión >= 15° de longitud y >= 4 informes (tipo modelable): 7421
+  tramos con extensión >= 20° de longitud y >= 4 informes (tipo modelable): 2308
+  tramos con extensión >= 25° de longitud y >= 4 informes (tipo modelable): 600
+  tramos con extensión >= 30° de longitud y >= 4 informes (tipo modelable): 194
+Unidad de análisis (>= 15°): 7421 tramos | B789 960 | A359 1723 | intervalo mediano 13.7 min | longitud mediana de los tramos: -34.9° a -15.9°
+Longitud de los informes (p10/p50/p90): -32.7 / -24.1 / -15.0
+================================================================================
+Días de estudio propuestos (más tramos):
+  INVIERNO
+            tramos  b789_a359  vientos_medidos  mes
+fecha                                              
+2023-11-01      44         18              574   11
+2023-11-03      40         16              460   11
+2023-11-04      40         17              499   11
+2023-11-06      36         20              547   11
+2023-11-09      36         20              427   11
+2024-12-25      35          9              353   12
+  VERANO
+            tramos  b789_a359  vientos_medidos  mes
+fecha                                              
+2023-07-09      66         16              800    7
+2023-07-08      59         22              818    7
+2023-07-16      59         27              797    7
+2023-07-15      59         23              790    7

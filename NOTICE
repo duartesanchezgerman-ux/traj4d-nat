@@ -1,0 +1,9 @@
+traj4d — open analysis of oceanic flight efficiency
+Copyright 2026 Germán Duarte Sánchez
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This software does not include or redistribute any third-party data. Input data (OpenSky ADS-C,
+OpenSky aircraft database, ERA5, EMEP/EEA calculator) must be obtained from their providers under
+their own terms; see docs/DATOS.md. The ICAO CORSIA CERT and EUROCONTROL BADA are not included and
+must not be added to this repository.

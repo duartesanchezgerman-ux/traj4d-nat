@@ -1,0 +1,26 @@
+================================================================================================
+B789: 7080 informes con Mach | mediana 0.845 | IQR 0.840–0.849 | Mach de diseño Poll–Schumann 0.815
+   FL  |   n  | Mach obs (p25/p50/p75) | Mach ECON del modelo a 0,75·MTOW con CI = 0/25/50/75/100 | CI implícito
+   340 |   715 | 0.840 / 0.846 / 0.849    | 0.785 0.820 0.845 0.860 0.865   |   55 kg/min
+   350 |   552 | 0.840 / 0.844 / 0.849    | 0.790 0.825 0.850 0.855 0.865   |   45 kg/min
+   360 |  1757 | 0.840 / 0.843 / 0.848    | 0.800 0.835 0.850 0.855 0.860   |   40 kg/min
+   370 |   738 | 0.839 / 0.844 / 0.850    | 0.810 0.835 0.850 0.855 0.860   |   40 kg/min
+   380 |   655 | 0.841 / 0.847 / 0.850    | 0.815 0.835 0.845 0.855 0.855   |   55 kg/min
+   390 |  1748 | 0.840 / 0.845 / 0.849    | 0.825 0.835 0.845 0.850 0.855   |   45 kg/min
+   400 |   396 | 0.840 / 0.845 / 0.849    | 0.825 0.835 0.845 0.850 0.850   |   50 kg/min
+   410 |   389 | 0.839 / 0.844 / 0.848    | 0.825 0.835 0.840 0.845 0.850   |   65 kg/min
+  Sensibilidad a la masa (FL370, mediana observada 0.845): CI implícito con 0.65·MTOW -> 40 kg/min; 0.75·MTOW -> 40 kg/min; 0.85·MTOW -> 50 kg/min; 
+================================================================================================
+A359: 12103 informes con Mach | mediana 0.850 | IQR 0.848–0.852 | Mach de diseño Poll–Schumann 0.820
+   FL  |   n  | Mach obs (p25/p50/p75) | Mach ECON del modelo a 0,75·MTOW con CI = 0/25/50/75/100 | CI implícito
+   350 |   371 | 0.848 / 0.850 / 0.851    | 0.785 0.820 0.845 0.860 0.865   |   55 kg/min
+   360 |  1717 | 0.848 / 0.850 / 0.852    | 0.795 0.825 0.850 0.860 0.865   |   50 kg/min
+   370 |  1317 | 0.848 / 0.850 / 0.851    | 0.800 0.835 0.850 0.860 0.865   |   45 kg/min
+   380 |  2038 | 0.848 / 0.850 / 0.852    | 0.810 0.840 0.850 0.860 0.865   |   45 kg/min
+   390 |  2432 | 0.848 / 0.850 / 0.852    | 0.820 0.840 0.850 0.855 0.860   |   45 kg/min
+   400 |  2014 | 0.848 / 0.850 / 0.852    | 0.825 0.840 0.850 0.855 0.860   |   45 kg/min
+   410 |  1999 | 0.848 / 0.850 / 0.852    | 0.830 0.840 0.845 0.850 0.855   |   55 kg/min
+  Sensibilidad a la masa (FL390, mediana observada 0.850): CI implícito con 0.65·MTOW -> 45 kg/min; 0.75·MTOW -> 45 kg/min; 0.85·MTOW -> 65 kg/min; 
+
+Nota: sin viento. Con viento en contra el Mach ECON sube y con viento a favor baja (Fase 1b), así que el CI
+implícito tiene una incertidumbre de unos ±10–20 kg/min según el régimen de vientos del día.

@@ -1,0 +1,41 @@
+==========================================================================================
+Tramos candidatos en los días de estudio: 2162 | evaluados: 1885 | descartes: {'fl_variable': 20, 'fl_fuera_era5': 2, 'fuera_tiempo': 176, 'no_es_cruce': 52, 'rejilla_fuera_dominio': 27}
+Mach medido en el propio vuelo: 445 | Mach de su tipo: 1440
+
+COMPROBACIÓN: el óptimo no debe ser peor que la volada ni que la ortodrómica (salvo la resolución de la rejilla)
+  óptimo > volada en 125 tramos (mínimo -0.131 %) | óptimo > ortodrómica en 0 tramos
+  -> Suelo de ruido numérico (rejilla de 15 km + aproximación de la DP): los excesos en |x| < 0,2 % no son distinguibles de 0.
+
+DISTRIBUCIÓN del exceso de la volada frente al óptimo [%]:
+  p10 -0.034 | p25 0.009 | p50 0.101 | p75 0.295 | p90 0.603 | p95 0.916 | p99 1.938
+  fracción > 0,5 %: 13.5 % | > 1 %: 4.5 %
+
+GLOBAL
+n                           1885.000
+exceso_vs_opt_media            0.231
+exceso_vs_opt_p50              0.101
+exceso_vs_opt_p90              0.603
+exceso_vs_gc_media             0.037
+ganancia_opt_vs_gc_media       0.193
+kg_exceso_media               21.964
+dist_km_media               1327.005
+
+POR ESTACIÓN Y SENTIDO
+                      n  exceso_vs_opt_media  exceso_vs_opt_p50  exceso_vs_opt_p90  exceso_vs_gc_media  ganancia_opt_vs_gc_media  kg_exceso_media  dist_km_media
+estacion sentido                                                                                                                                                
+invierno E        240.0                0.304              0.115              0.714               0.077                     0.225           25.618       1400.029
+         O        120.0                0.188              0.038              0.547              -0.071                     0.257           19.803       1375.821
+verano   E        930.0                0.229              0.103              0.605               0.067                     0.161           21.767       1307.694
+         O        595.0                0.212              0.102              0.588              -0.005                     0.217           21.233       1317.888
+
+TIPOS PRINCIPALES
+          n  exceso_vs_opt_media  exceso_vs_opt_p50  exceso_vs_opt_p90  exceso_vs_gc_media  ganancia_opt_vs_gc_media  kg_exceso_media  dist_km_media
+tipo                                                                                                                                                
+A333  106.0                0.230              0.082              0.637               0.010                     0.218           20.856       1344.327
+A359  381.0                0.228              0.110              0.571               0.058                     0.169           20.586       1389.937
+B772  213.0                0.268              0.149              0.650              -0.032                     0.299           31.192       1439.243
+B77W  142.0                0.207              0.092              0.541              -0.005                     0.211           22.129       1233.793
+B789  254.0                0.203              0.090              0.567               0.020                     0.182           15.095       1260.263
+
+SENSIBILIDAD A LA MASA (submuestra de 355 tramos; exceso medio de la volada frente al óptimo, %)
+  0,70·MTOW: 0.184 | 0,80·MTOW: 0.183 | 0,90·MTOW: 0.182

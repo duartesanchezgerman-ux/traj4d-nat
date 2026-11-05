@@ -1,0 +1,22 @@
+# Entorno local
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+
+# Datos: grandes y con licencia (OpenSky no permite redistribuirlos). Nunca al repositorio.
+/datos/
+*.nc
+
+# Restos de compilación de LaTeX (el PDF sí se guarda)
+articulo/*/*.aux
+articulo/*/*.log
+articulo/*/*.bbl
+articulo/*/*.bcf
+articulo/*/*.blg
+articulo/*/*.out
+articulo/*/*.run.xml
+articulo/*/*.synctex.gz
+
+# Copia limpia para publicar en GitHub (repositorio aparte, con historial nuevo)
+/_publicacion/

@@ -1,0 +1,34 @@
+======================================================================================
+A. Mach ECON (FL libre, sin viento) según el cost index [kg/min]
+   masa  | CI   0 CI  10 CI  20 CI  30 CI  40 CI  60 CI  80 CI 100 CI 150
+   230 t |  0.820  0.830  0.835  0.840  0.840  0.845  0.850  0.855  0.865
+   200 t |  0.815  0.830  0.835  0.840  0.845  0.850  0.855  0.855  0.870
+   170 t |  0.815  0.830  0.835  0.840  0.845  0.850  0.855  0.860  0.870
+  -> Con este modelo, volar a M0,85 a 200 t equivale a un CI ≈ 55 kg/min.
+======================================================================================
+B. Crucero de 5770 km desde 225 t. Comparación A COSTE TOTAL (combustible + CI·min), referencia = escalones + M0,85
+  --- CI = 0 kg/min ---
+   [contra 30 ] Escalones + Mach ECON: comb -0.55 %  coste -0.55 %  t +12.7 min | Continuo FL+Mach ECON: comb -0.62 %  coste -0.62 %  t +12.3 min
+   [sin viento] Escalones + Mach ECON: comb -0.96 %  coste -0.96 %  t +15.7 min | Continuo FL+Mach ECON: comb -1.01 %  coste -1.01 %  t +15.5 min
+   [favor 30  ] Escalones + Mach ECON: comb -1.43 %  coste -1.43 %  t +17.4 min | Continuo FL+Mach ECON: comb -1.49 %  coste -1.49 %  t +17.8 min
+  --- CI = 27 kg/min ---
+   [contra 30 ] Escalones + Mach ECON: comb -0.27 %  coste -0.05 %  t  +3.0 min | Continuo FL+Mach ECON: comb -0.34 %  coste -0.09 %  t  +3.1 min
+   [sin viento] Escalones + Mach ECON: comb -0.65 %  coste -0.17 %  t  +5.6 min | Continuo FL+Mach ECON: comb -0.70 %  coste -0.22 %  t  +5.4 min
+   [favor 30  ] Escalones + Mach ECON: comb -1.10 %  coste -0.36 %  t  +7.4 min | Continuo FL+Mach ECON: comb -1.17 %  coste -0.40 %  t  +7.6 min
+  --- CI = 55 kg/min ---
+   [contra 30 ] Escalones + Mach ECON: comb +0.16 %  coste -0.01 %  t  -1.3 min | Continuo FL+Mach ECON: comb +0.14 %  coste -0.05 %  t  -1.6 min
+   [sin viento] Escalones + Mach ECON: comb -0.19 %  coste +0.00 %  t  +1.2 min | Continuo FL+Mach ECON: comb -0.27 %  coste -0.02 %  t  +1.5 min
+   [favor 30  ] Escalones + Mach ECON: comb -0.59 %  coste -0.05 %  t  +3.0 min | Continuo FL+Mach ECON: comb -0.63 %  coste -0.07 %  t  +2.9 min
+======================================================================================
+C. Física lateral: MAD<->JFK atravesando un chorro sintético (75 m/s, 45°N, FL340), CI = 55
+  Ortodrómica: 5762 km, latitud máxima 46.3°N
+  [Oeste MAD->JFK]
+    Ortodrómica                        dist   5762 km  comb  41.96 t (+0.00 %)  t 7.67 h  coste +0.00 %
+    Por 37N 40W (sur del chorro)       dist   6097 km  comb  40.67 t (-3.08 %)  t 7.45 h  coste -3.00 %
+    Por 45N 40W (núcleo del chorro)    dist   5769 km  comb  42.05 t (+0.21 %)  t 7.69 h  coste +0.21 %
+    Por 53N 40W (norte del chorro)     dist   5940 km  comb  40.52 t (-3.43 %)  t 7.40 h  coste -3.46 %
+  [Este JFK->MAD]
+    Ortodrómica                        dist   5762 km  comb  28.00 t (+0.00 %)  t 5.12 h  coste +0.00 %
+    Por 37N 40W (sur del chorro)       dist   6097 km  comb  32.74 t (+16.94 %)  t 5.98 h  coste +16.89 %
+    Por 45N 40W (núcleo del chorro)    dist   5769 km  comb  27.97 t (-0.10 %)  t 5.12 h  coste -0.09 %
+    Por 53N 40W (norte del chorro)     dist   5940 km  comb  31.46 t (+12.35 %)  t 5.74 h  coste +12.26 %

@@ -1,0 +1,17 @@
+====================================================================================================
+RUTA VOLADA FRENTE A ÓPTIMO LATERAL — 1885 tramos
+  exceso de combustible, media                            0.231 %  IC95 [  0.196,   0.267]  (70 días)
+  exceso de combustible, mediana                          0.101 %  IC95 [  0.081,   0.128]  (70 días)
+  fracción de tramos con exceso > 0,5 %                  13.475 %  IC95 [ 10.649,  16.549]  (70 días)
+  ganancia del óptimo frente a la ortodrómica, media      0.193 %  IC95 [  0.154,   0.233]  (70 días)
+  exceso medio en kg por tramo                           21.964 kg  IC95 [ 18.939,  25.257]  (70 días)
+  exceso medio B789 (n=254)                               0.203 %  IC95 [  0.161,   0.253]  (59 días)
+  exceso medio A359 (n=381)                               0.228 %  IC95 [  0.183,   0.276]  (68 días)
+====================================================================================================
+ERA5 FRENTE A VIENTO MEDIDO (sin dirección corrupta) — 31190 informes
+  error vectorial RMS                                     3.249 m/s  IC95 [  3.132,   3.367]  (70 días)
+  error vectorial mediano                                 2.288 m/s  IC95 [  2.216,   2.365]  (70 días)
+  sesgo de temperatura (ERA5 − avión)                    -0.747 K  IC95 [ -0.770,  -0.725]  (70 días)
+  sesgo del módulo con viento > 60 m/s                   -1.341 m/s  IC95 [ -1.970,  -0.906]  (70 días)
+
+B = 5000 remuestreos por días, semilla 20261102.

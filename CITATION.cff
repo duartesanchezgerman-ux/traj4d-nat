@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "traj4d: open, reproducible analysis of oceanic flight efficiency with ADS-C, ERA5 and the Poll-Schumann model"
+type: software
+authors:
+  - family-names: "Duarte Sánchez"
+    given-names: "Germán"
+    orcid: "https://orcid.org/0009-0008-8293-0442"
+    affiliation: "Independent researcher, Cieza, Spain"
+license: Apache-2.0
+version: "1.0.0"
+keywords:
+  - ADS-C
+  - wind-optimal routing
+  - ERA5
+  - aircraft performance
+  - North Atlantic
+# Fill in on publication day (see docs/publicacion/LISTA_PUBLICACION.md):
+#   repository-code: "https://github.com/<user>/<repo>"
+#   date-released: "YYYY-MM-DD"
+#   doi: "10.5281/zenodo.XXXXXXX"

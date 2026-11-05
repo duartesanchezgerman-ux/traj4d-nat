@@ -1,0 +1,83 @@
+====================================================================================================
+Informes meteorológicos comparados: 32649 en 70 días | marcados: 1459 (4.47 %) | familia 787: 10253 informes, 13.7 % marcados
+
+1. Diferencia de dirección de los marcados (|Δdir|, grados): p5: 115 | p25: 123 | p50: 126 | p75: 129 | p95: 135
+   cociente de velocidades obs/ERA5 de los marcados: mediana 1.012 | p5–p95 0.88–1.21
+   signo de Δdir en los marcados: {1.0: 1229, -1.0: 230}
+
+2. Familia 787 por tipo:
+      size  mean
+tipo            
+B788  3044  12.5
+B789  4942  13.8
+B78X  2267  15.4
+
+3. Familia 787 por mes (fracción marcada, %):
+         size  mean
+mes                
+2023-07  1990   1.0
+2023-08   603   5.1
+2023-09   993  29.0
+2023-10  1068  33.1
+2023-11  1382   4.3
+2024-03   221   0.0
+2024-04   239   8.4
+2024-05   360  30.8
+2024-06   373   2.9
+2024-07   609  20.9
+2024-08   565   6.5
+2024-09   273  16.8
+2024-10   538   8.9
+2024-11   314  37.3
+2024-12   419  15.5
+2025-01   306  24.8
+
+4. Familia 787 por operador (≥ 100 informes):
+          size  mean
+operador            
+THY        262  20.6
+ELY        475  18.3
+AEA        300  15.7
+UAL       1796  15.2
+TOM       1024  14.6
+MSR        110  14.5
+KLM        450  14.4
+AAL        615  13.2
+BAW        819  12.5
+AVA        332  12.0
+?         2415  11.9
+TFL        187  11.2
+JAF        118  11.0
+RAM        100   9.0
+ACA        394   8.6
+
+5. Familia 787 por avión: fracción de informes marcados de cada avión (aviones con ≥ 20 informes)
+   aviones: 185 | con 0 %: 8 | con > 0 y < 50 %: 177 | con ≥ 50 %: 0 | con ≥ 90 %: 0
+   (si el defecto fuera de ciertos aviones, la fracción por avión sería casi siempre 0 % o casi 100 %)
+
+6. Persistencia por avión y día: ¿un avión afectado lo está todo el día?
+   pares avión-día con ≥ 5 informes: 480 | 0 %: 312 | intermedio: 160 | 100 %: 8
+
+7. Familia 787: fracción marcada según la dirección real del viento (ERA5, de dónde sopla) y Δdir medio
+               n  marcada  ddir_marcados
+dir_era                                 
+(0, 30]      365    0.000            NaN
+(30, 60]     227    0.000            NaN
+(60, 90]     111    0.000            NaN
+(90, 120]    125    0.032       -116.169
+(120, 150]    89    0.607       -124.477
+(150, 180]   161    0.981       -125.762
+(180, 210]   314    0.994        127.022
+(210, 240]  1210    0.714        125.198
+(240, 270]  1835    0.009        112.458
+(270, 300]  2093    0.000            NaN
+(300, 330]  1707    0.000            NaN
+(330, 360]   939    0.000            NaN
+
+8. Fuera de la familia 787 (marcados por tipo):
+tipo
+A359    4
+E35L    2
+C5M     2
+A319    2
+A35K    1
