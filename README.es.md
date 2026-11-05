@@ -1,5 +1,7 @@
 # traj4d — ¿Cuánto se acercan al óptimo de viento las rutas oceánicas del Atlántico Norte oriental?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23986492.svg)](https://doi.org/10.5281/zenodo.23986492)
+
 Código de investigación del artículo *How Close to Wind-Optimal Are Eastern North Atlantic Oceanic Tracks?*
 (G. Duarte Sánchez et al., en preparación para el Journal of Open Aviation Science). Con los scripts de este
 repositorio se regenera cada cifra, tabla y figura del artículo. El manuscrito se añadirá cuando se publique.
@@ -25,4 +27,8 @@ PYTHONPATH=src python scripts/auditoria_a1.py # auditoría independiente de las 
 ```
 
 ## Licencia
-Código: Apache-2.0 (`LICENSE`, `NOTICE`). Los datos no se redistribuyen; cada fuente tiene sus condiciones (ver README.md).
+Código: Apache-2.0 (`LICENSE`, `NOTICE`). Los datos no se redistribuyen; cada fuente tiene sus condiciones (ver README.md). Cita: doi:10.5281/zenodo.23986492 (ver `CITATION.cff`).
+
+## Uso de inteligencia artificial
+El autor usó Claude (Anthropic), un modelo de lenguaje, como asistente para desarrollar el código y procesar los
+datos. El autor diseñó el estudio, tomó las decisiones metodológicas y comprobó el código y los resultados.

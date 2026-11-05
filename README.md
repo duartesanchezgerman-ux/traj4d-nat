@@ -1,5 +1,7 @@
 # traj4d — How close to wind-optimal are eastern North Atlantic oceanic tracks?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23986492.svg)](https://doi.org/10.5281/zenodo.23986492)
+
 Research code for the article *How Close to Wind-Optimal Are Eastern North Atlantic Oceanic Tracks?*
 (G. Duarte Sánchez et al., in preparation for the Journal of Open Aviation Science). Every number, table and
 figure of the article can be regenerated with the scripts in this repository. The manuscript itself will be added
@@ -65,12 +67,11 @@ bash scripts/2_revision_completa.sh               # checks data, runs tests, all
 Comments and identifiers in the code are in Spanish; the article is in English.
 
 ## Licence and citation
-Code: Apache-2.0 (see `LICENSE` and `NOTICE`). Please cite the article and this software (see `CITATION.cff`).
+Code: Apache-2.0 (see `LICENSE` and `NOTICE`). Please cite the article and this software (doi:10.5281/zenodo.23986492; see `CITATION.cff`).
 This work contains data from adsb.lol, made available under the Open Database License (ODbL).
 ERA5 results contain modified Copernicus Climate Change Service information; neither the European Commission
 nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
 
 ## Use of AI
-The author used Claude (Anthropic) as an assistant for code development, data processing, literature search,
-and drafting and editing. The author designed the study, took the methodological decisions and checked the
-code and the results.
+The author used Claude (Anthropic), a large language model, as an assistant to develop the code and process
+the data. The author designed the study, took the methodological decisions, and checked the code and the results.
