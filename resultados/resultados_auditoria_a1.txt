@@ -17,7 +17,7 @@ B. CONVENIO DEL VIENTO (dirección DE la que sopla: u = −V·sin, v = −V·cos
 ====================================================================================================
 C. INTERPOLACIÓN DE ERA5: xarray frente al código (300 informes al azar)
 ====================================================================================================
-  diferencia máxima xarray − código: u 1.42e-14 m/s | v 1.07e-14 m/s | T 2.84e-14 K (n = 50)
+  diferencia máxima xarray − código: u 0.00e+00 m/s | v 0.00e+00 m/s | T 0.00e+00 K (n = 300)
   [OK] misma interpolación
 
 ====================================================================================================
@@ -48,7 +48,7 @@ E. CONSUMO HORARIO EN CRUCERO frente a valores públicos típicos (kg/h, a 0,8·
 ====================================================================================================
 F. INTEGRADOR: Euler de 1 km (escrito aquí) frente al RK4 de 20 km del código, 25 tramos
 ====================================================================================================
-  diferencia de combustible Euler − código: media +0.008 % | máx |·| 0.233 %
+  diferencia de combustible Euler − código: media +0.005 % | máx |·| 0.231 %
   [OK] los dos integradores coinciden (< 0,3 %; la ruta del código interpola en ortodrómica por tramos)
 
 ====================================================================================================
@@ -93,18 +93,18 @@ J. CIFRAS DEL MANUSCRITO (inglés): cada frase se reconstruye con los datos y se
   [OK] Mach number was measured on the flight itself in 445 segments
   [OK] for only 24\% of the segments
   [OK] comparison of 31,190 valid reports
-  [OK] The vector RMS error is 3.25~m/s
+  [OK] The vector root-mean-square error is 3.25~m/s
   [OK] the median vector error 2.29~m/s
   [OK] the 95th percentile 5.80~m/s
   [OK] ERA5 is 0.75~K colder than the aircraft
   [OK] costs on average only 0.062\%
   [OK] that is, 27\% of the total excess
-  [OK] In 1,755 of the 1,885 segments
+  [OK] Of the 1,755 segments whose planned waypoints were identified
   [OK] Identical on every meridian & 917
   [OK] Differs by 0.5$^\circ$      & 761
   [OK] Differs by $\geq$1$^\circ$  & 77
-  [OK] from the 48\% of segments
-  [OK] & 11,070
+  [OK] from the 48\% of segments with identified planned waypoints
+  [OK] & 11,073
   [OK] & 3.20 &
   [OK] & 13,866
   [OK] & 3.08 &

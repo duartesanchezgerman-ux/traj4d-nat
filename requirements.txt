@@ -8,5 +8,6 @@ pycontrails>=0.65
 pyopensky>=2.18
 cdsapi>=0.7.5
 xarray
+pyproj>=3.6        # auditoria_a1.py (geodesia independiente)
 netCDF4
 pytest

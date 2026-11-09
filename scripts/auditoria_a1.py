@@ -262,7 +262,7 @@ def grupo(est, sen):
 
 
 sens = c.dropna(subset=["exceso_vs_opt_m70"])
-clases = pd.cut(vel, [0, 20, 40, 60, 120])
+clases = pd.cut(vel, [0, 20, 40, 60, 120], include_lowest=True)   # la clase baja incluye la calma (0 m/s)
 tab_v = {k: e[clases == k] for k in clases.cat.categories}
 afirmaciones = [
     f"{m1(len(c))} were evaluated",
@@ -283,17 +283,17 @@ afirmaciones = [
     f"Mach number was measured on the flight itself in {m1((c.origen_mach == 'medido').sum())} segments",
     f"for only {pct0((c.origen_mach == 'medido').mean())}\\% of the segments",
     f"comparison of {m1(len(vv))} valid reports",
-    f"The vector RMS error is {f2(np.sqrt((e ** 2).mean()))}~m/s",
+    f"The vector root-mean-square error is {f2(np.sqrt((e ** 2).mean()))}~m/s",
     f"the median vector error {f2(e.median())}~m/s",
     f"the 95th percentile {f2(e.quantile(.95))}~m/s",
     f"ERA5 is {f2(-(vv.T_era - vv.T_obs).mean())}~K colder than the aircraft",
     f"costs on average only {f3(estr.estructural_pct.mean())}\\%",
     f"that is, {100 * estr.estructural_pct.mean() / estr.exceso_total_pct.mean():.0f}\\% of the total excess",
-    f"In {m1(len(pc))} of the {m1(len(estr))} segments",
+    f"Of the {m1(len(pc))} segments whose planned waypoints were identified",
     f"Identical on every meridian & {m1((cl == 'igual').sum())}",
     f"Differs by 0.5$^\\circ$      & {m1((cl == 'medio').sum())}",
     f"Differs by $\\geq$1$^\\circ$  & {m1((cl == 'uno').sum())}",
-    f"from the {pct0((cl != 'igual').mean())}\\% of segments",
+    f"from the {pct0((cl != 'igual').mean())}\\% of segments with identified planned waypoints",
 ]
 for k, x in tab_v.items():            # tabla de ERA5 por clase de viento: n y RMS
     afirmaciones.append(f"& {m1(len(x))}")

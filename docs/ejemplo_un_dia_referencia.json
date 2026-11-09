@@ -1,0 +1,565 @@
+{
+ "_nota": "Valores por día de los resultados completos del artículo A1 (70 días). Los usa scripts/ejemplo_un_dia.py para comprobar un día.",
+ "dias": {
+  "2023-07-08": {
+   "informes_viento": 796,
+   "error_vectorial_rms_ms": 3.066,
+   "tramos": 57,
+   "exceso_medio_pct": 0.453,
+   "exceso_mediana_pct": 0.409,
+   "ganancia_opt_vs_gc_media_pct": 0.354
+  },
+  "2023-07-09": {
+   "informes_viento": 784,
+   "error_vectorial_rms_ms": 2.987,
+   "tramos": 65,
+   "exceso_medio_pct": 0.112,
+   "exceso_mediana_pct": 0.079,
+   "ganancia_opt_vs_gc_media_pct": 0.231
+  },
+  "2023-07-11": {
+   "informes_viento": 800,
+   "error_vectorial_rms_ms": 2.684,
+   "tramos": 53,
+   "exceso_medio_pct": 0.254,
+   "exceso_mediana_pct": 0.113,
+   "ganancia_opt_vs_gc_media_pct": 0.025
+  },
+  "2023-07-12": {
+   "informes_viento": 748,
+   "error_vectorial_rms_ms": 3.029,
+   "tramos": 49,
+   "exceso_medio_pct": 0.277,
+   "exceso_mediana_pct": 0.085,
+   "ganancia_opt_vs_gc_media_pct": 0.208
+  },
+  "2023-07-13": {
+   "informes_viento": 760,
+   "error_vectorial_rms_ms": 2.731,
+   "tramos": 49,
+   "exceso_medio_pct": 0.218,
+   "exceso_mediana_pct": 0.115,
+   "ganancia_opt_vs_gc_media_pct": 0.172
+  },
+  "2023-07-15": {
+   "informes_viento": 778,
+   "error_vectorial_rms_ms": 2.624,
+   "tramos": 53,
+   "exceso_medio_pct": 0.094,
+   "exceso_mediana_pct": 0.058,
+   "ganancia_opt_vs_gc_media_pct": 0.021
+  },
+  "2023-07-16": {
+   "informes_viento": 765,
+   "error_vectorial_rms_ms": 2.493,
+   "tramos": 54,
+   "exceso_medio_pct": 0.286,
+   "exceso_mediana_pct": 0.099,
+   "ganancia_opt_vs_gc_media_pct": 0.032
+  },
+  "2023-07-23": {
+   "informes_viento": 751,
+   "error_vectorial_rms_ms": 3.048,
+   "tramos": 52,
+   "exceso_medio_pct": 0.124,
+   "exceso_mediana_pct": 0.048,
+   "ganancia_opt_vs_gc_media_pct": 0.027
+  },
+  "2023-08-13": {
+   "informes_viento": 495,
+   "error_vectorial_rms_ms": 3.189,
+   "tramos": 34,
+   "exceso_medio_pct": 0.322,
+   "exceso_mediana_pct": 0.085,
+   "ganancia_opt_vs_gc_media_pct": 0.016
+  },
+  "2023-08-15": {
+   "informes_viento": 430,
+   "error_vectorial_rms_ms": 3.136,
+   "tramos": 27,
+   "exceso_medio_pct": 0.145,
+   "exceso_mediana_pct": 0.074,
+   "ganancia_opt_vs_gc_media_pct": 0.033
+  },
+  "2023-08-26": {
+   "informes_viento": 523,
+   "error_vectorial_rms_ms": 2.859,
+   "tramos": 27,
+   "exceso_medio_pct": 0.229,
+   "exceso_mediana_pct": 0.198,
+   "ganancia_opt_vs_gc_media_pct": 0.538
+  },
+  "2023-08-27": {
+   "informes_viento": 473,
+   "error_vectorial_rms_ms": 3.001,
+   "tramos": 26,
+   "exceso_medio_pct": 0.201,
+   "exceso_mediana_pct": 0.137,
+   "ganancia_opt_vs_gc_media_pct": 0.471
+  },
+  "2023-09-23": {
+   "informes_viento": 712,
+   "error_vectorial_rms_ms": 3.195,
+   "tramos": 58,
+   "exceso_medio_pct": 0.178,
+   "exceso_mediana_pct": 0.087,
+   "ganancia_opt_vs_gc_media_pct": 0.1
+  },
+  "2023-09-24": {
+   "informes_viento": 753,
+   "error_vectorial_rms_ms": 2.908,
+   "tramos": 55,
+   "exceso_medio_pct": 0.376,
+   "exceso_mediana_pct": 0.268,
+   "ganancia_opt_vs_gc_media_pct": 0.346
+  },
+  "2023-09-27": {
+   "informes_viento": 777,
+   "error_vectorial_rms_ms": 3.398,
+   "tramos": 56,
+   "exceso_medio_pct": 0.145,
+   "exceso_mediana_pct": 0.077,
+   "ganancia_opt_vs_gc_media_pct": 0.377
+  },
+  "2023-09-29": {
+   "informes_viento": 666,
+   "error_vectorial_rms_ms": 3.687,
+   "tramos": 45,
+   "exceso_medio_pct": 0.171,
+   "exceso_mediana_pct": 0.076,
+   "ganancia_opt_vs_gc_media_pct": 0.035
+  },
+  "2023-10-01": {
+   "informes_viento": 741,
+   "error_vectorial_rms_ms": 2.882,
+   "tramos": 63,
+   "exceso_medio_pct": 0.144,
+   "exceso_mediana_pct": 0.09,
+   "ganancia_opt_vs_gc_media_pct": 0.179
+  },
+  "2023-10-02": {
+   "informes_viento": 796,
+   "error_vectorial_rms_ms": 2.552,
+   "tramos": 56,
+   "exceso_medio_pct": 0.046,
+   "exceso_mediana_pct": -0.019,
+   "ganancia_opt_vs_gc_media_pct": 0.114
+  },
+  "2023-10-06": {
+   "informes_viento": 640,
+   "error_vectorial_rms_ms": 3.777,
+   "tramos": 54,
+   "exceso_medio_pct": 0.248,
+   "exceso_mediana_pct": 0.079,
+   "ganancia_opt_vs_gc_media_pct": 0.174
+  },
+  "2023-10-10": {
+   "informes_viento": 684,
+   "error_vectorial_rms_ms": 4.071,
+   "tramos": 53,
+   "exceso_medio_pct": 0.369,
+   "exceso_mediana_pct": 0.21,
+   "ganancia_opt_vs_gc_media_pct": 0.107
+  },
+  "2023-11-01": {
+   "informes_viento": 518,
+   "error_vectorial_rms_ms": 3.304,
+   "tramos": 35,
+   "exceso_medio_pct": 0.258,
+   "exceso_mediana_pct": 0.212,
+   "ganancia_opt_vs_gc_media_pct": 0.215
+  },
+  "2023-11-02": {
+   "informes_viento": 382,
+   "error_vectorial_rms_ms": 2.941,
+   "tramos": 22,
+   "exceso_medio_pct": 0.221,
+   "exceso_mediana_pct": 0.096,
+   "ganancia_opt_vs_gc_media_pct": 0.149
+  },
+  "2023-11-03": {
+   "informes_viento": 390,
+   "error_vectorial_rms_ms": 3.553,
+   "tramos": 30,
+   "exceso_medio_pct": 0.738,
+   "exceso_mediana_pct": 0.346,
+   "ganancia_opt_vs_gc_media_pct": 0.317
+  },
+  "2023-11-04": {
+   "informes_viento": 441,
+   "error_vectorial_rms_ms": 3.193,
+   "tramos": 26,
+   "exceso_medio_pct": 0.291,
+   "exceso_mediana_pct": 0.254,
+   "ganancia_opt_vs_gc_media_pct": 0.272
+  },
+  "2023-11-05": {
+   "informes_viento": 387,
+   "error_vectorial_rms_ms": 3.07,
+   "tramos": 22,
+   "exceso_medio_pct": 0.359,
+   "exceso_mediana_pct": 0.015,
+   "ganancia_opt_vs_gc_media_pct": 0.002
+  },
+  "2023-11-06": {
+   "informes_viento": 453,
+   "error_vectorial_rms_ms": 3.313,
+   "tramos": 20,
+   "exceso_medio_pct": 0.048,
+   "exceso_mediana_pct": 0.014,
+   "ganancia_opt_vs_gc_media_pct": 0.019
+  },
+  "2023-11-07": {
+   "informes_viento": 358,
+   "error_vectorial_rms_ms": 3.617,
+   "tramos": 18,
+   "exceso_medio_pct": 0.259,
+   "exceso_mediana_pct": 0.182,
+   "ganancia_opt_vs_gc_media_pct": 0.249
+  },
+  "2023-11-09": {
+   "informes_viento": 353,
+   "error_vectorial_rms_ms": 4.163,
+   "tramos": 23,
+   "exceso_medio_pct": 0.478,
+   "exceso_mediana_pct": 0.308,
+   "ganancia_opt_vs_gc_media_pct": 0.573
+  },
+  "2023-11-20": {
+   "informes_viento": 309,
+   "error_vectorial_rms_ms": 3.414,
+   "tramos": 19,
+   "exceso_medio_pct": 0.399,
+   "exceso_mediana_pct": 0.308,
+   "ganancia_opt_vs_gc_media_pct": 0.597
+  },
+  "2024-03-21": {
+   "informes_viento": 228,
+   "error_vectorial_rms_ms": 3.705,
+   "tramos": 15,
+   "exceso_medio_pct": 0.219,
+   "exceso_mediana_pct": 0.161,
+   "ganancia_opt_vs_gc_media_pct": 0.405
+  },
+  "2024-03-27": {
+   "informes_viento": 505,
+   "error_vectorial_rms_ms": 3.142,
+   "tramos": 40,
+   "exceso_medio_pct": 0.247,
+   "exceso_mediana_pct": 0.139,
+   "ganancia_opt_vs_gc_media_pct": 0.443
+  },
+  "2024-03-30": {
+   "informes_viento": 235,
+   "error_vectorial_rms_ms": 2.611,
+   "tramos": 14,
+   "exceso_medio_pct": 0.39,
+   "exceso_mediana_pct": 0.314,
+   "ganancia_opt_vs_gc_media_pct": 0.152
+  },
+  "2024-04-06": {
+   "informes_viento": 321,
+   "error_vectorial_rms_ms": 3.47,
+   "tramos": 17,
+   "exceso_medio_pct": 0.076,
+   "exceso_mediana_pct": 0.037,
+   "ganancia_opt_vs_gc_media_pct": 0.084
+  },
+  "2024-04-08": {
+   "informes_viento": 277,
+   "error_vectorial_rms_ms": 3.457,
+   "tramos": 15,
+   "exceso_medio_pct": 0.019,
+   "exceso_mediana_pct": -0.011,
+   "ganancia_opt_vs_gc_media_pct": 0.068
+  },
+  "2024-04-13": {
+   "informes_viento": 262,
+   "error_vectorial_rms_ms": 2.572,
+   "tramos": 12,
+   "exceso_medio_pct": 0.196,
+   "exceso_mediana_pct": 0.156,
+   "ganancia_opt_vs_gc_media_pct": 0.271
+  },
+  "2024-05-02": {
+   "informes_viento": 263,
+   "error_vectorial_rms_ms": 3.332,
+   "tramos": 15,
+   "exceso_medio_pct": 0.294,
+   "exceso_mediana_pct": 0.16,
+   "ganancia_opt_vs_gc_media_pct": 0.128
+  },
+  "2024-05-14": {
+   "informes_viento": 291,
+   "error_vectorial_rms_ms": 2.808,
+   "tramos": 13,
+   "exceso_medio_pct": 0.14,
+   "exceso_mediana_pct": 0.025,
+   "ganancia_opt_vs_gc_media_pct": 0.101
+  },
+  "2024-05-24": {
+   "informes_viento": 216,
+   "error_vectorial_rms_ms": 3.487,
+   "tramos": 15,
+   "exceso_medio_pct": 0.246,
+   "exceso_mediana_pct": 0.307,
+   "ganancia_opt_vs_gc_media_pct": 0.137
+  },
+  "2024-05-25": {
+   "informes_viento": 257,
+   "error_vectorial_rms_ms": 4.527,
+   "tramos": 20,
+   "exceso_medio_pct": 0.118,
+   "exceso_mediana_pct": 0.002,
+   "ganancia_opt_vs_gc_media_pct": 0.106
+  },
+  "2024-06-03": {
+   "informes_viento": 328,
+   "error_vectorial_rms_ms": 2.691,
+   "tramos": 16,
+   "exceso_medio_pct": 0.081,
+   "exceso_mediana_pct": 0.05,
+   "ganancia_opt_vs_gc_media_pct": 0.338
+  },
+  "2024-06-04": {
+   "informes_viento": 311,
+   "error_vectorial_rms_ms": 2.236,
+   "tramos": 16,
+   "exceso_medio_pct": 0.127,
+   "exceso_mediana_pct": 0.058,
+   "ganancia_opt_vs_gc_media_pct": 0.378
+  },
+  "2024-06-06": {
+   "informes_viento": 370,
+   "error_vectorial_rms_ms": 2.844,
+   "tramos": 19,
+   "exceso_medio_pct": 0.153,
+   "exceso_mediana_pct": 0.087,
+   "ganancia_opt_vs_gc_media_pct": 0.096
+  },
+  "2024-06-28": {
+   "informes_viento": 340,
+   "error_vectorial_rms_ms": 3.372,
+   "tramos": 17,
+   "exceso_medio_pct": 0.249,
+   "exceso_mediana_pct": 0.161,
+   "ganancia_opt_vs_gc_media_pct": 0.191
+  },
+  "2024-07-27": {
+   "informes_viento": 454,
+   "error_vectorial_rms_ms": 3.222,
+   "tramos": 23,
+   "exceso_medio_pct": 0.199,
+   "exceso_mediana_pct": 0.141,
+   "ganancia_opt_vs_gc_media_pct": 0.091
+  },
+  "2024-07-28": {
+   "informes_viento": 362,
+   "error_vectorial_rms_ms": 3.196,
+   "tramos": 15,
+   "exceso_medio_pct": 0.146,
+   "exceso_mediana_pct": 0.038,
+   "ganancia_opt_vs_gc_media_pct": 0.192
+  },
+  "2024-07-30": {
+   "informes_viento": 500,
+   "error_vectorial_rms_ms": 2.976,
+   "tramos": 22,
+   "exceso_medio_pct": 0.043,
+   "exceso_mediana_pct": 0.012,
+   "ganancia_opt_vs_gc_media_pct": 0.027
+  },
+  "2024-07-31": {
+   "informes_viento": 439,
+   "error_vectorial_rms_ms": 3.439,
+   "tramos": 22,
+   "exceso_medio_pct": 0.191,
+   "exceso_mediana_pct": 0.089,
+   "ganancia_opt_vs_gc_media_pct": 0.076
+  },
+  "2024-08-06": {
+   "informes_viento": 582,
+   "error_vectorial_rms_ms": 3.409,
+   "tramos": 24,
+   "exceso_medio_pct": 0.125,
+   "exceso_mediana_pct": 0.079,
+   "ganancia_opt_vs_gc_media_pct": 0.064
+  },
+  "2024-08-07": {
+   "informes_viento": 413,
+   "error_vectorial_rms_ms": 3.263,
+   "tramos": 20,
+   "exceso_medio_pct": 0.115,
+   "exceso_mediana_pct": 0.092,
+   "ganancia_opt_vs_gc_media_pct": 0.019
+  },
+  "2024-08-12": {
+   "informes_viento": 388,
+   "error_vectorial_rms_ms": 3.884,
+   "tramos": 14,
+   "exceso_medio_pct": 0.199,
+   "exceso_mediana_pct": 0.049,
+   "ganancia_opt_vs_gc_media_pct": 0.052
+  },
+  "2024-08-16": {
+   "informes_viento": 393,
+   "error_vectorial_rms_ms": 2.92,
+   "tramos": 22,
+   "exceso_medio_pct": 0.348,
+   "exceso_mediana_pct": 0.216,
+   "ganancia_opt_vs_gc_media_pct": 0.279
+  },
+  "2024-09-01": {
+   "informes_viento": 369,
+   "error_vectorial_rms_ms": 3.689,
+   "tramos": 16,
+   "exceso_medio_pct": 0.352,
+   "exceso_mediana_pct": 0.346,
+   "ganancia_opt_vs_gc_media_pct": 0.257
+  },
+  "2024-09-02": {
+   "informes_viento": 462,
+   "error_vectorial_rms_ms": 3.225,
+   "tramos": 15,
+   "exceso_medio_pct": 0.556,
+   "exceso_mediana_pct": 0.183,
+   "ganancia_opt_vs_gc_media_pct": 0.618
+  },
+  "2024-10-02": {
+   "informes_viento": 441,
+   "error_vectorial_rms_ms": 3.668,
+   "tramos": 27,
+   "exceso_medio_pct": 0.246,
+   "exceso_mediana_pct": 0.229,
+   "ganancia_opt_vs_gc_media_pct": 0.03
+  },
+  "2024-10-05": {
+   "informes_viento": 420,
+   "error_vectorial_rms_ms": 3.507,
+   "tramos": 18,
+   "exceso_medio_pct": 0.276,
+   "exceso_mediana_pct": 0.11,
+   "ganancia_opt_vs_gc_media_pct": 0.325
+  },
+  "2024-10-06": {
+   "informes_viento": 477,
+   "error_vectorial_rms_ms": 2.969,
+   "tramos": 34,
+   "exceso_medio_pct": 0.352,
+   "exceso_mediana_pct": 0.272,
+   "ganancia_opt_vs_gc_media_pct": 0.313
+  },
+  "2024-10-12": {
+   "informes_viento": 424,
+   "error_vectorial_rms_ms": 3.697,
+   "tramos": 23,
+   "exceso_medio_pct": 0.591,
+   "exceso_mediana_pct": 0.287,
+   "ganancia_opt_vs_gc_media_pct": 0.373
+  },
+  "2024-11-14": {
+   "informes_viento": 201,
+   "error_vectorial_rms_ms": 3.499,
+   "tramos": 12,
+   "exceso_medio_pct": 0.059,
+   "exceso_mediana_pct": 0.035,
+   "ganancia_opt_vs_gc_media_pct": 0.081
+  },
+  "2024-11-28": {
+   "informes_viento": 190,
+   "error_vectorial_rms_ms": 4.548,
+   "tramos": 7,
+   "exceso_medio_pct": 0.218,
+   "exceso_mediana_pct": 0.219,
+   "ganancia_opt_vs_gc_media_pct": 0.442
+  },
+  "2024-11-29": {
+   "informes_viento": 172,
+   "error_vectorial_rms_ms": 2.88,
+   "tramos": 8,
+   "exceso_medio_pct": 0.059,
+   "exceso_mediana_pct": -0.007,
+   "ganancia_opt_vs_gc_media_pct": 0.102
+  },
+  "2024-11-30": {
+   "informes_viento": 248,
+   "error_vectorial_rms_ms": 3.34,
+   "tramos": 12,
+   "exceso_medio_pct": 0.1,
+   "exceso_mediana_pct": 0.044,
+   "ganancia_opt_vs_gc_media_pct": 0.064
+  },
+  "2024-12-11": {
+   "informes_viento": 282,
+   "error_vectorial_rms_ms": 3.416,
+   "tramos": 6,
+   "exceso_medio_pct": 0.01,
+   "exceso_mediana_pct": -0.006,
+   "ganancia_opt_vs_gc_media_pct": 0.075
+  },
+  "2024-12-12": {
+   "informes_viento": 302,
+   "error_vectorial_rms_ms": 3.508,
+   "tramos": 9,
+   "exceso_medio_pct": 0.152,
+   "exceso_mediana_pct": 0.033,
+   "ganancia_opt_vs_gc_media_pct": 0.078
+  },
+  "2024-12-13": {
+   "informes_viento": 287,
+   "error_vectorial_rms_ms": 3.15,
+   "tramos": 12,
+   "exceso_medio_pct": 0.299,
+   "exceso_mediana_pct": 0.238,
+   "ganancia_opt_vs_gc_media_pct": 0.662
+  },
+  "2024-12-22": {
+   "informes_viento": 273,
+   "error_vectorial_rms_ms": 2.961,
+   "tramos": 10,
+   "exceso_medio_pct": 0.141,
+   "exceso_mediana_pct": 0.019,
+   "ganancia_opt_vs_gc_media_pct": 0.24
+  },
+  "2024-12-25": {
+   "informes_viento": 281,
+   "error_vectorial_rms_ms": 3.389,
+   "tramos": 11,
+   "exceso_medio_pct": 0.136,
+   "exceso_mediana_pct": 0.131,
+   "ganancia_opt_vs_gc_media_pct": 0.124
+  },
+  "2025-01-03": {
+   "informes_viento": 294,
+   "error_vectorial_rms_ms": 3.439,
+   "tramos": 15,
+   "exceso_medio_pct": -0.008,
+   "exceso_mediana_pct": -0.02,
+   "ganancia_opt_vs_gc_media_pct": 0.022
+  },
+  "2025-01-04": {
+   "informes_viento": 323,
+   "error_vectorial_rms_ms": 3.011,
+   "tramos": 13,
+   "exceso_medio_pct": 0.017,
+   "exceso_mediana_pct": 0.002,
+   "ganancia_opt_vs_gc_media_pct": 0.062
+  },
+  "2025-01-10": {
+   "informes_viento": 303,
+   "error_vectorial_rms_ms": 4.163,
+   "tramos": 17,
+   "exceso_medio_pct": 0.109,
+   "exceso_mediana_pct": -0.04,
+   "ganancia_opt_vs_gc_media_pct": 0.121
+  },
+  "2025-01-11": {
+   "informes_viento": 243,
+   "error_vectorial_rms_ms": 5.407,
+   "tramos": 13,
+   "exceso_medio_pct": 0.452,
+   "exceso_mediana_pct": 0.189,
+   "ganancia_opt_vs_gc_media_pct": 0.487
+  }
+ }
+}

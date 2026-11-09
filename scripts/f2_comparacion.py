@@ -15,6 +15,7 @@ constante (se descartan los tramos con más de 4000 ft de variación); CI irrele
 el combustible y el tiempo varían en el mismo sentido.
 """
 import glob
+import os
 import warnings
 from pathlib import Path
 
@@ -128,7 +129,7 @@ for vid, s in sel.iterrows():
     ))
 
 t = pd.DataFrame(filas)
-t.to_csv("datos/procesado/comparacion_tramos.csv", index=False)
+t.to_csv(Path(os.environ.get("SALIDA", "datos/procesado")) / "comparacion_tramos.csv", index=False)  # SALIDA: ejemplo de un día
 pd.set_option("display.width", 200)
 print("=" * 90)
 print(f"Tramos candidatos en los días de estudio: {len(sel)} | evaluados: {len(t)} | descartes: {descartes}")

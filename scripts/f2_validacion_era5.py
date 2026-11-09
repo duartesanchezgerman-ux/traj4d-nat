@@ -18,6 +18,7 @@ informes ADS-C de algunos operadores). Por eso el error medido aquí es una cota
 de una previsión, que es lo que realmente tendría un piloto en vuelo.
 """
 import glob
+import os
 import warnings
 from pathlib import Path
 
@@ -100,8 +101,8 @@ d = d[~d.dir_corrupta]
 print("\n--- En adelante, sin los informes con dirección corrupta ---")
 print("\nPOR ESTACIÓN"); print(d.groupby("estacion").apply(tabla).round(2).to_string())
 print("\nPOR DÍA"); print(d.groupby("dia").apply(tabla)[["n", "error_vectorial_rms", "sesgo_modulo", "viento_medio_obs", "sesgo_T"]].round(2).to_string())
-d["clase_viento"] = pd.cut(d.vel_obs, [0, 20, 40, 60, 120], labels=["<20", "20–40", "40–60", ">60"])
+d["clase_viento"] = pd.cut(d.vel_obs, [0, 20, 40, 60, 120], labels=["0–20", "20–40", "40–60", ">60"], include_lowest=True)  # incluye la calma (0 m/s)
 print("\nPOR INTENSIDAD DEL VIENTO OBSERVADO [m/s]")
 print(d.groupby("clase_viento").apply(tabla)[["n", "error_vectorial_rms", "error_vectorial_p95", "sesgo_modulo"]].round(2).to_string())
 d[["t", "icao24", "tipo", "lat", "lon", "fl", "u_obs", "v_obs", "T_obs", "u_era", "v_era", "T_era"]].to_csv(
-    "datos/procesado/validacion_era5_adsc.csv", index=False)
+    Path(os.environ.get("SALIDA", "datos/procesado")) / "validacion_era5_adsc.csv", index=False)

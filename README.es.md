@@ -24,11 +24,12 @@ pip install -r requirements.txt
 PYTHONPATH=src python -m pytest -q tests      # 28 pruebas
 bash scripts/2_revision_completa.sh           # todo el análisis, con los datos ya descargados (ver README.md)
 PYTHONPATH=src python scripts/auditoria_a1.py # auditoría independiente de las cifras
+bash scripts/ejemplo_un_dia.sh                # comprobación rápida con un solo día de ERA5 (~85 MB, unos minutos)
 ```
 
 ## Licencia
 Código: Apache-2.0 (`LICENSE`, `NOTICE`). Los datos no se redistribuyen; cada fuente tiene sus condiciones (ver README.md). Cita: doi:10.5281/zenodo.23986492 (ver `CITATION.cff`).
 
 ## Uso de inteligencia artificial
-El autor usó Claude (Anthropic), un modelo de lenguaje, como asistente para desarrollar el código y procesar los
-datos. El autor diseñó el estudio, tomó las decisiones metodológicas y comprobó el código y los resultados.
+El autor usó Claude (Anthropic), un modelo de lenguaje, como asistente para desarrollar el código, procesar los
+datos y redactar la documentación. El autor diseñó el estudio, tomó las decisiones metodológicas y comprobó el código y los resultados.

@@ -45,6 +45,25 @@ python scripts/datos/extraer_aeronaves.py datos/opensky_meta/aircraft-database-c
 bash scripts/1_descargar_era5.sh                  # ERA5 for the study days in docs/dias_estudio_era5.txt (needs ~/.cdsapirc)
 ```
 
+## Quick check: one day (a few minutes)
+To check the code without downloading the whole ERA5 set, run one study day. This needs the processed ADS-C
+tables (the first two commands above) and one ERA5 file (~85 MB, downloaded by the script; needs `~/.cdsapirc`).
+```bash
+bash scripts/ejemplo_un_dia.sh               # default day 2023-07-09; any of the 70 study days can be given
+```
+The script runs the ERA5 validation and the flown-vs-optimal comparison for that day, compares six numbers with
+the full 70-day run (`docs/ejemplo_un_dia_referencia.json`) and draws a one-day version of Figures 2 and 5 in
+`resultados/ejemplo_<day>/`. Expected output for 2023-07-09 (about 1.5 min on a laptop after the download):
+```
+  valid wind reports                           784.000  reference   784.000  OK
+  ERA5 vector RMS error [m/s]                    2.987  reference     2.987  OK
+  oceanic segments                              65.000  reference    65.000  OK
+  mean fuel excess, flown vs optimal [%]         0.112  reference     0.112  OK
+  median fuel excess [%]                         0.079  reference     0.079  OK
+  mean gain, optimal vs great circle [%]         0.231  reference     0.231  OK
+RESULT: all values match the full run.
+```
+
 ## Reproducing the article
 ```bash
 bash scripts/2_revision_completa.sh               # checks data, runs tests, all analyses and figures (1–3 h)
@@ -62,6 +81,7 @@ bash scripts/2_revision_completa.sh               # checks data, runs tests, all
 | `scripts/f3_estadistica.py` | Day-block bootstrap confidence intervals |
 | `scripts/f3_estructura.py` | Waypoint structure vs choice (Table 4) |
 | `scripts/f3_figuras.py --idioma en` | All figures (written to `articulo/en/figures/`) |
+| `scripts/ejemplo_un_dia.sh` | One-day reproducibility check (see above) |
 | `scripts/auditoria_a1.py` | Independent audit: re-computes each step by other means and checks the numbers quoted in the article |
 
 Comments and identifiers in the code are in Spanish; the article is in English.
@@ -73,5 +93,12 @@ ERA5 results contain modified Copernicus Climate Change Service information; nei
 nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
 
 ## Use of AI
-The author used Claude (Anthropic), a large language model, as an assistant to develop the code and process
-the data. The author designed the study, took the methodological decisions, and checked the code and the results.
+The author used Claude (Anthropic), a large language model, as an assistant to develop the code, process the
+data and write the documentation. The author designed the study, took the methodological decisions, and checked
+the code and the results.
+
+## Changes
+- v1.0.1: one-day reproducibility check (`scripts/ejemplo_un_dia.sh`). `f2_validacion_era5.py`: the lowest
+  wind class now includes the three calm reports (0 m/s), so Table 1 reads 0–20 m/s, 11,073 reports (was 11,070);
+  no other number changes. `f2_validacion_era5.py` and `f2_comparacion.py` accept `SALIDA` (output folder).
+- v1.0.0: code and results of the article as first submitted to the co-authors.

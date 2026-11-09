@@ -104,7 +104,7 @@ dia
 POR INTENSIDAD DEL VIENTO OBSERVADO [m/s]
                     n  error_vectorial_rms  error_vectorial_p95  sesgo_modulo
 clase_viento                                                                 
-<20           11070.0                 3.20                 5.28          0.09
+0–20          11073.0                 3.20                 5.28          0.09
 20–40         13866.0                 3.08                 5.61         -0.28
 40–60          4895.0                 3.63                 6.57         -0.96
 >60            1356.0                 3.84                 7.10         -1.34
