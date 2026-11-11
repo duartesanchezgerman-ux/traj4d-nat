@@ -8,7 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0008-8293-0442"
     affiliation: "Independent researcher, Cieza, Spain"
 license: Apache-2.0
-version: "1.0.1"
+version: "1.0.2"
 keywords:
   - ADS-C
   - wind-optimal routing
@@ -16,5 +16,5 @@ keywords:
   - aircraft performance
   - North Atlantic
 repository-code: "https://github.com/duartesanchezgerman-ux/traj4d-nat"
-date-released: "2026-11-09"
+date-released: "2026-11-11"
 doi: "10.5281/zenodo.23986492"

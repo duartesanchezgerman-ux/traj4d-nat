@@ -98,7 +98,10 @@ data and write the documentation. The author designed the study, took the method
 the code and the results.
 
 ## Changes
-- v1.0.1: one-day reproducibility check (`scripts/ejemplo_un_dia.sh`). `f2_validacion_era5.py`: the lowest
+- v1.0.2: the changes listed below for v1.0.1. The v1.0.1 release was created before these commits
+  reached GitHub, so its archive has the same code and results as v1.0.0 (only the DOI and the use-of-AI
+  note in README and CITATION.cff differ); use v1.0.2.
+- Intended for v1.0.1, released in v1.0.2: one-day reproducibility check (`scripts/ejemplo_un_dia.sh`). `f2_validacion_era5.py`: the lowest
   wind class now includes the three calm reports (0 m/s), so Table 1 reads 0–20 m/s, 11,073 reports (was 11,070);
   no other number changes. `f2_validacion_era5.py` and `f2_comparacion.py` accept `SALIDA` (output folder).
 - v1.0.0: code and results of the article as first submitted to the co-authors.
